@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+canvas {
+    border: 5px solid #444;
+    background-color: #222;
+    margin-top: 20px;
+}
+
+.controls {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle-row {
+    display: flex;
+    gap: 40px; /* Spazio tra sinistra e destra */
+    margin: 10px 0;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #f1c40f; /* Giallo come i segnali stradali */
+    border: none;
+    border-radius: 50%; /* Pulsanti tondi */
+    cursor: pointer;
+    box-shadow: 0 4px #d4ac0d;
+}
+
+.btn:active {
+    box-shadow: 0 0 #d4ac0d;
+    transform: translateY(4px);
+}
+
+#status {
+    margin-top: 20px;
+    font-weight: bold;
+}

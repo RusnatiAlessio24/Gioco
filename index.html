@@ -2,10 +2,24 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bus Game - Touch Control</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-                        
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+        
+        <div class="controls">
+            <button class="btn" id="up">D</button>
+            <div class="middle-row">
+                <button class="btn" id="left">SX</button>
+                <button class="btn" id="right">DX</button>
+            </div>
+            <button class="btn" id="down">R</button>
+        </div>
+        
+        <div id="status">Evita gli ostacoli e non schiantarti!!!!</div>
+    </div>
+    <script src="java.js"></script>
 </body>
 </html>
