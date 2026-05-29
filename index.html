@@ -2,24 +2,19 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Bus Game - Touch Control</title>
+    <title>Bus Game - Sprite Edition</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="game-container">
-        <canvas id="gameCanvas" width="800" height="500"></canvas>
+        <div id="scoreBoard">Punti: <span id="score">0</span></div>
         
-        <div class="controls">
-            <button class="btn" id="up">D</button>
-            <div class="middle-row">
-                <button class="btn" id="left">SX</button>
-                <button class="btn" id="right">DX</button>
-            </div>
-            <button class="btn" id="down">R</button>
-        </div>
+        <canvas id="gameCanvas" width="700" height="600"></canvas>
         
-        <div id="status">Evita gli ostacoli e non schiantarti!!!!</div>
+        <div id="status">Usa i comandi da tastiera</div>
     </div>
+    
+    <script src="sprite.js"></script>
     <script src="java.js"></script>
 </body>
 </html>

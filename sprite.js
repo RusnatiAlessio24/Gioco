@@ -1,14 +1,15 @@
-var running = [
+// Creazione degli oggetti immagine
+const busImage = new Image();
+const obstacleImage = new Image();
+const personImage = new Image();
 
-"https://i.ibb.co/bgsxt0Jh/Run-005.png",
-"https://i.ibb.co/SXqWk6wP/Run-006.png",
-"https://i.ibb.co/G4t5G9qD/Run-007.png",
-"https://i.ibb.co/0Vrn7sQX/Run-008.png",
-"https://i.ibb.co/Y7v5zpHr/Run-009.png",
-"https://i.ibb.co/20w4n5YZ/Run-000.png",
-"https://i.ibb.co/mCZgz1L6/Run-001.png",
-"https://i.ibb.co/8DVPxKKN/Run-002.png",
-"https://i.ibb.co/k6KSbn5C/Run-003.png",
-"https://i.ibb.co/7t4Q2gzf/Run-004.png",
+// --- INSERISCI QUI I TUOI LINK DI IMGBB ---
+// NOTA: Assicurati che i link finiscano con .png o .jpg (Link diretti)
+busImage.src = "https://i.ibb.co/8DmYw431/Gemini-Generated-Image-nd9v8qnd9v8qnd9v.png";       
+obstacleImage.src = "https://i.ibb.co/G1v5QHc/png-clipart-car-car-sedan-car.png";   
+personImage.src = "https://i.ibb.co/jPcrzHR3/pngtree-2d-cartoon-character-boy-vector-images-png-image-15201837.png"; 
 
-]
+// Gestione errori (opzionale, ti aiuta a capire se i link sono corretti nella console del browser)
+busImage.onerror = () => console.error("Errore nel caricamento dell'immagine del Bus");
+obstacleImage.onerror = () => console.error("Errore nel caricamento dell'immagine dell'Ostacolo");
+personImage.onerror = () => console.error("Errore nel caricamento dell'immagine della Persona");

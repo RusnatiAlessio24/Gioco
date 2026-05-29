@@ -5,45 +5,35 @@ body {
     background-color: #1a1a1a;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contatore Punti */
+#scoreBoard {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #2c3e50;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px rgba(0,0,0,0.3);
+    color: #2ecc71; 
+}
+
+#score {
+    color: white;
 }
 
 canvas {
     border: 5px solid #444;
     background-color: #222;
-    margin-top: 20px;
-}
-
-.controls {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.middle-row {
-    display: flex;
-    gap: 40px; /* Spazio tra sinistra e destra */
-    margin: 10px 0;
-}
-
-.btn {
-    width: 70px;
-    height: 70px;
-    font-weight: bold;
-    font-size: 1rem;
-    background-color: #f1c40f; /* Giallo come i segnali stradali */
-    border: none;
-    border-radius: 50%; /* Pulsanti tondi */
-    cursor: pointer;
-    box-shadow: 0 4px #d4ac0d;
-}
-
-.btn:active {
-    box-shadow: 0 0 #d4ac0d;
-    transform: translateY(4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 #status {
     margin-top: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
+    color: #f1c40f; /* Colore giallo per le istruzioni */
 }
